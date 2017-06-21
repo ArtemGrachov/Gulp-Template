@@ -18,3 +18,18 @@ h1:hover {
     display: -ms-flexbox;
     display: flex;
 }
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+.icon-orangered {
+    color: orangered;
+}
+
+.icon-green {
+    color: green;
+}

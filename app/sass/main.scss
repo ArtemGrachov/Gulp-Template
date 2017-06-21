@@ -14,3 +14,16 @@ h1 {
 .test {
     display: flex;
 }
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    &-orangered {
+        color: orangered;
+    }
+    &-green {
+        color: green;
+    }
+}
