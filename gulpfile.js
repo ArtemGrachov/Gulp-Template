@@ -8,10 +8,11 @@ global.$ = {
     },
     gp: require('gulp-load-plugins')(),
     browserSync: require('browser-sync').create(),
-    del: require('del')
+    del: require('del'),
+    errHdl: require('./gulp/tasks/error').default
 }
 
-$.path.task.forEach(function(taskPath) {
+$.path.task.forEach(function (taskPath) {
     require(taskPath)();
 });
 
@@ -22,6 +23,7 @@ $.gulp.task('default', [
     'css-libs',
     'scripts',
     'js-libs',
+    'fonts',
     'img',
     'browser-sync',
     'sprite',
